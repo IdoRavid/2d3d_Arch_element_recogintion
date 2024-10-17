@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37856728-77DB-42E0-AD54-20803E4E2FC7}</ProjectGuid>
+    <ProjectName>Smartik</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>Build\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.apx</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>Build\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>Build\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.apx</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Support;..\..\..\Support\Inc;..\..\..\Support\Modules\GSRoot;..\..\..\Support\Modules\GSRoot\STL\imp;..\..\..\Support\Modules\GSUtils;..\..\..\Support\Modules\DGLib;..\..\..\Support\Modules\GX;..\..\..\Support\Modules\GXImage;..\..\..\Support\Modules\GXImageBase;..\..\..\Support\Modules\DGGraphix;..\..\..\Support\Modules\Graphix;..\..\..\Support\Modules\TextEngine;..\..\..\Support\Modules\InputOutput;..\..\..\Support\Modules\UCLib;..\..\..\Support\Modules\UDLib;..\..\..\Support\Modules\Pattern;..\..\..\Support\Modules\VBAttrDialogs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WINDOWS;_WINDOWS;_USRDLL;_STLP_DONT_FORCE_MSVC_LIB_NAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).apx</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>NotSet</SubSystem>
+      <EntryPointSymbol>DllMainEntry</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImportLibrary>
+      </ImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <AdditionalOptions>/export:GetExportedFuncAddrs,%401 /export:SetImportedFuncAddrs,%402 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Support\Inc;..\..\..\Support\Modules\GSRoot;..\..\..\Support\Modules\GSRoot\STL\imp;..\..\..\Support\Modules\GSUtils;..\..\..\Support\Modules\DGLib;..\..\..\Support\Modules\GX;..\..\..\Support\Modules\GXImage;..\..\..\Support\Modules\GXImageBase;..\..\..\Support\Modules\DGGraphix;..\..\..\Support\Modules\Graphix;..\..\..\Support\Modules\TextEngine;..\..\..\Support\Modules\InputOutput;..\..\..\Support\Modules\UCLib;..\..\..\Support\Modules\UDLib;..\..\..\Support\Modules\Pattern;..\..\..\Support\Modules\VBAttrDialogs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WINDOWS;_WINDOWS;_USRDLL;_STLP_DONT_FORCE_MSVC_LIB_NAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).apx</OutputFile>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>DllMainEntry</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImportLibrary>
+      </ImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <AdditionalOptions>/export:GetExportedFuncAddrs,%401 /export:SetImportedFuncAddrs,%402 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\APICommon.h" />
+    <ClInclude Include="Src\APIEnvir.h" />
+    <ClInclude Include="Src\ColRec.h" />
+    <ClInclude Include="Src\CurWallRec.h" />
+    <ClInclude Include="Src\DoorRec.h" />
+    <ClInclude Include="Src\Export3D.h" />
+    <ClInclude Include="Src\Extras.h" />
+    <ClInclude Include="Src\FloorRec.h" />
+    <ClInclude Include="Src\Floors.h" />
+    <ClInclude Include="Src\GeoAnalysis.h" />
+    <ClInclude Include="Src\LevelDimensions.h" />
+    <ClInclude Include="Src\MeniFuncs.h" />
+    <ClInclude Include="Src\MergeOldModel.h" />
+    <ClInclude Include="Src\Numberer.h" />
+    <ClInclude Include="Src\OBJ_Exporter.h" />
+    <ClInclude Include="Src\PicFunctions.h" />
+    <ClInclude Include="Src\Polygons.h" />
+    <ClInclude Include="Src\RecHandler.h" />
+    <ClInclude Include="Src\ResourceIDs.h" />
+    <ClInclude Include="Src\Resources.hpp" />
+    <ClInclude Include="Src\Room.h" />
+    <ClInclude Include="Src\RoomRec.h" />
+    <ClInclude Include="Src\RotateOnAxis.h" />
+    <ClInclude Include="Src\SavingFunctions.h" />
+    <ClInclude Include="Src\ShtilaLine.h" />
+    <ClInclude Include="Src\SilentRender.h" />
+    <ClInclude Include="Src\StairSection.h" />
+    <ClInclude Include="Src\Texturer.h" />
+    <ClInclude Include="Src\TheRenderer.h" />
+    <ClInclude Include="Src\TmrLayoutBook.h" />
+    <ClInclude Include="Src\TmrNavigator.h" />
+    <ClInclude Include="Src\TmrPoly.h" />
+    <ClInclude Include="Src\TmrTech.h" />
+    <ClInclude Include="Src\ViewMode.h" />
+    <ClInclude Include="Src\WallMatch.h" />
+    <ClInclude Include="Src\WallRec.h" />
+    <ClInclude Include="Src\WindowRec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\$(ProjectName).c" />
+    <ClCompile Include="Src\APICommon.c" />
+    <ClCompile Include="Src\ColRec.cpp" />
+    <ClCompile Include="Src\CurWallRec.cpp" />
+    <ClCompile Include="Src\DoorRec.cpp" />
+    <ClCompile Include="Src\Export3D.cpp" />
+    <ClCompile Include="Src\Extras.cpp" />
+    <ClCompile Include="Src\FloorRec.cpp" />
+    <ClCompile Include="Src\Floors.cpp" />
+    <ClCompile Include="Src\GeoAnalysis.cpp" />
+    <ClCompile Include="Src\LevelDimensions.cpp" />
+    <ClCompile Include="Src\MeniFuncs.cpp" />
+    <ClCompile Include="Src\MergeOldModel.cpp" />
+    <ClCompile Include="Src\Numberer.cpp" />
+    <ClCompile Include="Src\OBJ_Exporter.cpp" />
+    <ClCompile Include="Src\PicFunctions.cpp" />
+    <ClCompile Include="Src\Polygons.cpp" />
+    <ClCompile Include="Src\RecHandler.cpp" />
+    <ClCompile Include="Src\Resources.cpp" />
+    <ClCompile Include="Src\Room.cpp" />
+    <ClCompile Include="Src\RoomRec.cpp" />
+    <ClCompile Include="Src\RotateOnAxis.cpp" />
+    <ClCompile Include="Src\SavingFunctions.cpp" />
+    <ClCompile Include="Src\ShtilaLine.cpp" />
+    <ClCompile Include="Src\SilentRender.cpp" />
+    <ClCompile Include="Src\StairSection.cpp" />
+    <ClCompile Include="Src\Texturer.cpp" />
+    <ClCompile Include="Src\TheRenderer.cpp" />
+    <ClCompile Include="Src\TmrLayoutBook.cpp" />
+    <ClCompile Include="Src\TmrNavigator.cpp" />
+    <ClCompile Include="Src\TmrPoly.cpp" />
+    <ClCompile Include="Src\TmrTech.cpp" />
+    <ClCompile Include="Src\ViewMode.cpp" />
+    <ClCompile Include="Src\WallMatch.cpp" />
+    <ClCompile Include="Src\WallRec.cpp" />
+    <ClCompile Include="Src\WindowRec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RINT\$(ProjectName).grc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /nologo /X /EP /P /I "..\..\..\Support\Inc" /I "..\..\..\Support\Modules\DGLib" /I ".\Src" /FI"..\..\..\Support\Inc\utf8header.h" /DDEBUG /DWINDOWS /Fi"$(OutDir)\RO\$(ProjectName).grc.rc2.i" "RINT\$(ProjectName).grc"
+        "..\..\..\Support\Tools\Win\ResConv.exe" -m r -D WINDOWS -T W -q utf8 1252 -i "$(OutDir)\RO\$(ProjectName).grc.rc2.i" -D _DEBUG -o "$(OutDir)\RO\$(ProjectName).grc.rc2"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling the localized GRC file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)\RO\$(ProjectName).grc.rc2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl /nologo /X /EP /P /I "..\..\..\Support\Inc" /I "..\..\..\Support\Modules\DGLib" /I ".\Src" /FI"..\..\..\Support\Inc\utf8header.h" /DWINDOWS /Fi"$(OutDir)\RO\$(ProjectName).grc.rc2.i" "RINT\$(ProjectName).grc"
+        "..\..\..\Support\Tools\Win\ResConv.exe" -m r -D WINDOWS -T W -q utf8 1252 -i "$(OutDir)\RO\$(ProjectName).grc.rc2.i" -o "$(OutDir)\RO\$(ProjectName).grc.rc2"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling the localized GRC file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)\RO\$(ProjectName).grc.rc2;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RFIX\$(ProjectName)Fix.grc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /nologo /X /EP /P /I "..\..\..\Support\Inc" /I "..\..\..\Support\Modules\DGLib" /I ".\Src" /FI"..\..\..\Support\Inc\utf8header.h" /DDEBUG /DWINDOWS /Fi"$(OutDir)\RO\$(ProjectName)Fix.grc.rc2.i" "RFIX\$(ProjectName)Fix.grc"
+        "..\..\..\Support\Tools\Win\ResConv.exe" -m r -D WINDOWS -T W -q utf8 1252 -i "$(OutDir)\RO\$(ProjectName)Fix.grc.rc2.i" -p "RFIX\Images" -D _DEBUG -o "$(OutDir)\RO\$(ProjectName)Fix.grc.rc2"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling the non-localized GRC file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)\RO\$(ProjectName)Fix.grc.rc2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl /nologo /X /EP /P /I "..\..\..\Support\Inc" /I "..\..\..\Support\Modules\DGLib" /I ".\Src" /FI"..\..\..\Support\Inc\utf8header.h" /DWINDOWS /Fi"$(OutDir)\RO\$(ProjectName)Fix.grc.rc2.i" "RFIX\$(ProjectName)Fix.grc"
+        "..\..\..\Support\Tools\Win\ResConv.exe" -m r -D WINDOWS -T W -q utf8 1252 -i "$(OutDir)\RO\$(ProjectName)Fix.grc.rc2.i" -p "RFIX\Images" -o "$(OutDir)\RO\$(ProjectName)Fix.grc.rc2"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling the non-localized GRC file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)\RO\$(ProjectName)Fix.grc.rc2;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RFIX.WIN\$(ProjectName).rc2">
+      <FileType>RC</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rc /i "..\..\..\Support\Inc" /i "..\..\..\Support\Modules\DGLib" /i "$(OutDir)\RO" /d _DEBUG /fo"$(OutDir)$(ProjectName).res" "RFIX.WIN\$(ProjectName).rc2"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling the RC2 file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(ProjectName).res;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)\RO\$(ProjectName).grc.rc2;$(OutDir)\RO\$(ProjectName)Fix.grc.rc2;$(OutDir)\RO\ElemIcons.grc.rc2;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rc /i "..\..\..\Support\Inc" /i "..\..\..\Support\Modules\DGLib" /i "$(OutDir)\RO" /fo"$(OutDir)$(ProjectName).res" "RFIX.WIN\$(ProjectName).rc2"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling the RC2 file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(ProjectName).res;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)\RO\$(ProjectName).grc.rc2;$(OutDir)\RO\$(ProjectName)Fix.grc.rc2;$(OutDir)\RO\ElemIcons.grc.rc2;%(AdditionalInputs)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Include="..\..\..\Support\Lib\Win\ACAP_STAT.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Lib\Win\ACAP_STATD.lib" />
+    <Library Include="..\..\..\Support\Modules\DGLib\Win\DGImp.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\GSRoot\Win\GSRootImp.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\GSUtils\Win\GSUtilsImp.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\InputOutput\Win\InputOutputImp.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\UCLib\Win\UCImp.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\UDLib\Win\UDImp.lib">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\TextEngine\Win\TextEngineImp.LIB">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\ObjectDatabase\Win\ObjectDatabaseImp.LIB">
+      <FileType>Document</FileType>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\VectorImage\Win\VectorImageImp.LIB">
+      <FileType>Document</FileType>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RFIX\Images\MenuIcon_18x18.svg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

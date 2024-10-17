@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{7056dae3-3593-4941-8e3c-e104a8092402}</UniqueIdentifier>
+      <Extensions>grc;rc2</Extensions>
+    </Filter>
+    <Filter Include="Resources\Images">
+      <UniqueIdentifier>{7056dae3-3593-4941-8e3c-e104a8092402}</UniqueIdentifier>
+      <Extensions>png;svg</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{de7d7a13-a071-41e4-8f04-7d1691f7ec83}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx</Extensions>
+    </Filter>
+    <Filter Include="Src\Headers">
+      <UniqueIdentifier>{b32da348-770f-41d8-85c9-903e1cc415c5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{42902bf0-12fb-4ecb-a6fa-d9d2cf0ceeb9}</UniqueIdentifier>
+      <Extensions>lib</Extensions>
+    </Filter>
+    <Filter Include="Src\Render">
+      <UniqueIdentifier>{d987ad6e-61d8-4c16-a866-3e524664993b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Navigator">
+      <UniqueIdentifier>{1af12e43-6752-4850-85d0-e5edb3abe90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Export">
+      <UniqueIdentifier>{2b40372d-9ca2-414d-8ccd-b68637b11bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tech">
+      <UniqueIdentifier>{5d1908b0-8a19-4b11-8347-dc17caf46b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Recognition">
+      <UniqueIdentifier>{d76f639d-27e1-483f-b211-7782c5c27e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tools">
+      <UniqueIdentifier>{b2190132-f0eb-44c6-bd69-8070caadda45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tools\Level Dimensions">
+      <UniqueIdentifier>{a9663704-2c0e-41ad-89c9-9227a3d50d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tools\Numberer">
+      <UniqueIdentifier>{713504e1-c30c-43db-ab8a-5124ac3e84d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tools\Floors">
+      <UniqueIdentifier>{3fd4f073-ae02-4eea-a905-13f48f19f665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Texturer">
+      <UniqueIdentifier>{bd9cbddd-30d4-49e6-94a8-517524e8f850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Recognition\Room">
+      <UniqueIdentifier>{26582893-d242-46eb-97eb-ee1cf3837c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Recognition\Floor">
+      <UniqueIdentifier>{15c170d1-0416-47bf-88d6-03c9cfbae224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Recognition\2DTo3D">
+      <UniqueIdentifier>{34bfd6a3-10b1-480c-90d1-3c96365edd0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\$(ProjectName).c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\OBJ_Exporter.cpp">
+      <Filter>Src\Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SavingFunctions.cpp">
+      <Filter>Src\Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PicFunctions.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ShtilaLine.cpp">
+      <Filter>Src\Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SilentRender.cpp">
+      <Filter>Src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TexturerDialog.cpp">
+      <Filter>Src\Texturer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TheRenderer.cpp">
+      <Filter>Src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TmrLayoutBook.cpp">
+      <Filter>Src\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TmrNavigator.cpp">
+      <Filter>Src\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TmrTech.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ViewMode.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Export3D.cpp">
+      <Filter>Src\Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\APICommon.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Numberer.cpp">
+      <Filter>Src\Tools\Numberer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Floors.cpp">
+      <Filter>Src\Tools\Floors</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Polygons.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\LevelDimensions.cpp">
+      <Filter>Src\Tools\Level Dimensions</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StairSection.cpp">
+      <Filter>Src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GeoAnalysis.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Extras.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TmrPoly.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RotateOnAxis.cpp">
+      <Filter>Src\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Room.cpp">
+      <Filter>Src\Recognition\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RoomRec.cpp">
+      <Filter>Src\Recognition\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Resources.cpp">
+      <Filter>Src\Tech</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FloorRec.cpp">
+      <Filter>Src\Recognition\Floor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WallRec.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WindowRec.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DoorRec.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WallMatch.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CurWallRec.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ColRec.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RecHandler.cpp">
+      <Filter>Src\Recognition\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Texturer.cpp">
+      <Filter>Src\Texturer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\APIEnvir.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ResourceIDs.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\OBJ_Exporter.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PicFunctions.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\RotateOnAxis.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ShtilaLine.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\SavingFunctions.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\SilentRender.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TexturerDialog.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TheRenderer.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TmrLayoutBook.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TmrNavigator.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TmrTech.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ViewMode.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Export3D.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\APICommon.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Numberer.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Floors.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Polygons.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\LevelDimensions.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Extras.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\GeoAnalysis.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\StairSection.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FloorRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Room.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\RoomRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Resources.hpp">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TmrPoly.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\WallRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\WindowRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\DoorRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\WallMatch.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\CurWallRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ColRec.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\RecHandler.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Texturer.h">
+      <Filter>Src\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Support\Modules\DGLib\Win\DGImp.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\GSRoot\Win\GSRootImp.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\GSUtils\Win\GSUtilsImp.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\InputOutput\Win\InputOutputImp.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\UCLib\Win\UCImp.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\UDLib\Win\UDImp.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\TextEngine\Win\TextEngineImp.LIB">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\ObjectDatabase\Win\ObjectDatabaseImp.LIB">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Modules\VectorImage\Win\VectorImageImp.LIB">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\..\Support\Lib\Win\ACAP_STATD.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RINT\$(ProjectName).grc">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RFIX\$(ProjectName)Fix.grc">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RFIX.WIN\$(ProjectName).rc2">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RFIX\Images\MenuIcon_18x18.svg">
+      <Filter>Resources\Images</Filter>
+    </None>
+  </ItemGroup>
+</Project>

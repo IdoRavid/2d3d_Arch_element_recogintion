@@ -1,0 +1,442 @@
+﻿/* *****************************************************************************
+// Localizable resource description for the Smartik ARCHICAD Add-On
+// API Development Kit; Mac/Win
+// Namespaces:		Contact person:ArchiNaat
+// [SG compatible] - Yes
+// ****************************************************************************/
+
+#include "ResourceIDs.h"
+
+'STR#' 32000 "Add-on Name and Description" {
+/* [  1] */		"SmarTik"
+/* [  2] */		"The greatest tools for the lazy Mafiil!"
+}
+
+'STR#' 32500 "Export" {
+/* [   ] */		"Tamar"
+/* [   ] */		"Export"
+/* [  1] */			"Tamar's Navigator^ES^EE^EW^EI^ED^EL^E3^32453"
+/* [  2] */			"3D Export^ES^EE^EW^EI^ED^EL^E3^32439"
+}
+
+'STR#' 32501 "Basic" {
+/* [   ] */		"Tamar"
+/* [   ] */		"Basic"
+/* [  1] */			"Renderer^E3^EL^R^32425"
+/* [  2] */			"Texturer^E3^32431"
+}
+
+'STR#' 32502 "Tools" {
+/* [   ] */		"Tamar"
+/* [   ] */		"Tools"
+/* [  1] */			"Number Openings^ES^EE^EW^EI^ED^EL^E3^32445"
+/* [  2] */			"Select Invert Of Same Type^E3^EL^32432"
+/* [  3] */			"Select Invert^E3^EL^32432"
+/* [  4] */			"Rotate Elements On Pivot^32442"
+/* [  5] */         "Select Contour^ES^EE^EW^EI^ED^EL^E3^32443"
+/* [  6] */         "Calculate Area^ES^EE^EW^EI^ED^EL^32444"
+/* [  7] */         "2D -> 3D^ES^EE^EW^EI^ED^EL^32444"
+/* [  8] */         "Merge Old Model^ES^EE^EW^EI^ED^EL^32427"
+}
+
+'STR#' 32503 "Documenting" {
+/* [   ] */		"Tamar"
+/* [   ] */		"Documenting"
+/* [  1] */			"Get Project Info^E3^EL^32427"
+/* [  2] */			"Delete Layouts of Empty Floors^ES^EE^EW^EI^ED^EL^E3^32446"
+/* [  3] */         "Auto Level Dimensions^ES^EE^EW^EI^ED^EL^E3^32448"
+/* [  4] */			"Auto Fit To Grid Cell^E3^EL^32411"
+/* [  5] */         "Room Wizard^ES^EE^EW^EI^ED^EL^32449"
+
+}
+
+'STR#' 32504 "Naat" {
+/* [   ] */		"Tamar"
+/* [   ] */		"Naat"
+/* [ 1] */			"Server Observer^ES^EE^EW^EI^ED^EL^E3^32451"
+/* [ 2] */			"Print Guid^ES^EE^EW^EI^ED^EL^E3^32452"
+/* [ 2] */			"Get Selection^ES^EE^EW^EI^ED^EL^E3"
+}
+
+
+'GDLG'  32420  Palette		        0    0  270  270  "Tamar's Navigator" {
+/* [ 1] */  IconButton		   		245  5   20   20	32456 noFrame
+/* [2] */ Button				    190   200   70   50	LargePlain  "Publish"
+/* [ 3] */ MultiSelTreeView		    10   28	230 130	 SmallPlain  18  18  0  0  noLabelEdit  dragDrop  0
+/* [4] */ PopupControl			    10    4  230   18	80  3
+															NoIcon  "Project Map"
+															NoIcon  "View Map"
+															NoIcon  "Layout Map"
+															NoIcon  "Publisher Sets"
+/* [5] */ TextEdit			    85  167  150   23	LargePlain  255
+/* [6] */ LeftText				10  170   70   20	LargeBold  "Tik Name:"
+/* [7] */ CheckBox				10  200  70   20	LargePlain  "PPTik"
+/* [8] */ CheckBox				10  230  80   30	LargePlain  "Add Level Dimensions"
+/* [9] */ CheckBox				100  200  80   40	LargePlain  "Delete layouts of empty floors"
+}
+
+'DLGH'  32420  DLG_32420_Navigator {
+1	"Close Dialog"							Button_0
+2	""							Button_1
+3	""							Button_2
+4	""							Button_3
+5	""							MultiSelTreeView_0
+6	""							LeftText_0
+7	"Prestation for Mesoah"		CheckBox_0
+8	"Will automatically add Level Dimensions for every unique floor (In stories without level dimensions)" CheckBox_1
+}
+
+
+'GDLG'  32421  Palette		      0    0  280  400  "Renderer" {
+/* [ 1] */ CheckBox				10  40  100   20	LargePlain  "Perspective 1"
+/* [ 2] */ CheckBox				10  70  100   20	LargePlain  "Perspective 2"
+/* [ 3] */ CheckBox				10  100 100   20	LargePlain  "Perspective 3"
+/* [ 4] */ CheckBox				10  130 100   20	LargePlain  "Perspective 4"
+/* [ 5] */ CheckBox				10  160 100   20	LargePlain  "Elevation 1"
+/* [ 6] */ CheckBox				10  190 100   20	LargePlain  "Elevation 2"
+/* [ 7] */ CheckBox			10  220 100   20	LargePlain  "Elevation 3"
+/* [ 8] */ CheckBox			10  250 100   20	LargePlain  "Elevation 4"
+/* [ 9] */ Slider				120  50  100  20  1 1 15
+/* [ 10] */ LeftText				10  10  100  30  LargeBold "Cameras"
+/* [ 11] */ LeftText				120  20  100  20  LargeBold "Zoom:"
+/* [ 12] */ RadioButton        140  160  100  20  LargePlain  1  "High"
+/* [ 13] */ RadioButton        140  190  100  20  LargePlain  1  "Medium"
+/* [ 14] */ RadioButton        140  220  100  20  LargePlain  1  "Low"
+/* [ 15] */ LeftText	       120  130  100  20  LargeBold "Quality:"
+/* [ 16] */ IconButton		   	255  5   20   20	32456 noFrame
+/* [ 17] */ IconButton				140   340 50	  50	32464
+/* [ 18] */ RadioButton         10  320 70   20	LargeBold 2  "Server"  
+/* [ 19] */ RadioButton			80  320 70	   20	LargeBold 2  "Silent"  
+/* [ 20] */ RadioButton			150  320 70   20	LargeBold 2  "Local"  
+/* [ 21] */ CheckBox			10  280 100   20	LargePlain  "Stair Section"
+}
+
+'DLGH'  32421  DLG_32421_Renderer {
+1	""							CheckBox_0
+2	""							CheckBox_1
+3	""							CheckBox_2
+4	""							CheckBox_3
+5	""							CheckBox_4
+6	""							CheckBox_5
+7	""							CheckBox_6
+8	""							CheckBox_7
+9	""							Slider_0
+10	""							LeftText_0
+11	""							LeftText_1
+12	""							RadioButton_0
+13	""							RadioButton_1
+14	""							RadioButton_2
+15	""							LeftText_2
+16	""							Button_0
+17	""							Button_1
+18  "Render In Server"                          RadioButton_3
+19  "Render In Another Instance of ArchiCAD"                          RadioButton_4
+20  "Render In this Instance of ArchiCAD"                          RadioButton_5
+}
+ 
+ 
+
+ 
+ 
+'GDLG'  32422  Palette		      0    0  500  320  "Texturer" {
+/* [ 1] */ Picture				285  85  50  50  10000
+/* [ 2] */ CheckBox				  10  20  70  20  LargePlain  "Wall"
+/* [ 3] */ CheckBox				  10  50  70  20  LargePlain  "Column"
+/* [ 4] */ CheckBox				  10  80  70  20  LargePlain  "Slab"
+/* [ 5] */ CheckBox				  10  110  70  20  LargePlain  "Door"
+/* [ 6] */ CheckBox				  10  140  70  20  LargePlain  "Roof"
+/* [ 7] */ CheckBox				  10  170  70  20  LargePlain  "Mesh"
+/* [ 8] */ CheckBox				  10  200  70  20  LargePlain  "Stairs"
+/* [ 9] */ CheckBox				  10  290   100   20	LargePlain  "Fix OBJ"
+/* [ 10] */    PopupControl		  100  20 100  20  60  20
+				NoIcon "WallBeige01"
+				NoIcon "WallBeige02"
+				NoIcon "WallBeige03"
+				NoIcon "WallBeige04"
+				NoIcon "WallBeige05"
+				NoIcon "WallBeige06"
+				NoIcon "WallGray01"
+				NoIcon "WallGray02"
+				NoIcon "WallGray03"
+				NoIcon "WallGray04"
+				NoIcon "WallGray05"
+				NoIcon "WallGray06"
+				NoIcon "WallGray07"
+				NoIcon "WallGray08"
+				NoIcon "Bricks01"
+				NoIcon "Bricks02"
+				NoIcon "Bricks03"
+				NoIcon "Bricks04"
+				NoIcon "Bricks05"
+				NoIcon "Bricks06"
+				NoIcon "Bricks07"
+				NoIcon "Bricks08"
+				NoIcon "Bricks09"
+				NoIcon "ConcreteDirty01"
+				NoIcon "ConcreteDirty02"
+				NoIcon "ConcreteDirty03"
+				NoIcon "ConcreteDirty04"
+				NoIcon "ConcreteDirty05"
+				NoIcon "ConcreteDirty06"
+				NoIcon "ConcreteDirty07"
+				NoIcon "ConcreteDirty08"
+
+
+	/* [ 11] */    PopupControl		  100  50 100  20  60  20
+				NoIcon "WallBeige01"
+				NoIcon "WallBeige02"
+				NoIcon "WallBeige03"
+				NoIcon "WallBeige04"
+				NoIcon "WallBeige05"
+				NoIcon "WallBeige06"
+				NoIcon "WallGray01"
+				NoIcon "WallGray02"
+				NoIcon "WallGray03"
+				NoIcon "WallGray04"
+				NoIcon "WallGray05"
+				NoIcon "WallGray06"
+				NoIcon "WallGray07"
+				NoIcon "WallGray08"
+				NoIcon "Bricks01"
+				NoIcon "Bricks02"
+				NoIcon "Bricks03"
+				NoIcon "Bricks04"
+				NoIcon "Bricks05"
+				NoIcon "Bricks06"
+				NoIcon "Bricks07"
+				NoIcon "Bricks08"
+				NoIcon "Bricks09"
+
+/* [ 12] */    PopupControl		  100  80 100  20  60  20
+				NoIcon "FloorTile01"
+				NoIcon "FloorTile02"
+				NoIcon "FloorTile03"
+				NoIcon "FloorTile04"
+				NoIcon "FloorTile05"
+				NoIcon "FloorTile06"
+				NoIcon "FloorMarble01"
+				NoIcon "FloorMarble02"
+				NoIcon "FloorMarble03"
+				NoIcon "FloorMarble04"
+				NoIcon "FloorMarble05"
+				NoIcon "WoodFloor01"
+				NoIcon "WoodFloor02"
+				NoIcon "WoodFloor03"
+				NoIcon "WoodFloor04"
+				NoIcon "WoodFloor05"
+				NoIcon "WoodFloor06"
+				NoIcon "ConcreteDirty01"
+				NoIcon "ConcreteDirty02"
+				NoIcon "ConcreteDirty03"
+				NoIcon "ConcreteDirty04"
+
+/* [ 13] */    PopupControl		  100  110 100  20  60  20
+				NoIcon "wd-Pine Horizontal"
+				NoIcon "Wood01"
+				NoIcon "Wood02"
+				NoIcon "Wood03"
+				NoIcon "Wood04"
+				NoIcon "Wood05"
+				NoIcon "Wood06"
+				NoIcon "Metal01"
+				NoIcon "Metal02"
+				NoIcon "Metal03"
+				NoIcon "Metal04"
+				NoIcon "Metal05"
+				NoIcon "Metal06"
+				NoIcon "Metal07"
+				NoIcon "Metal08"
+
+/* [ 14] */    PopupControl		  100  140 100  20  60  20
+				NoIcon "RoofTile01"
+				NoIcon "RoofTile02"
+				NoIcon "RoofTile03"
+				NoIcon "RoofTile04"
+				NoIcon "RoofTile05"
+				NoIcon "RoofTile06"
+				NoIcon "RoofMetal01"
+				NoIcon "RoofMetal02"
+				NoIcon "RoofMetal03"
+				NoIcon "RoofMetal04"
+				NoIcon "RoofMetal05"
+				NoIcon "RoofMetal06"
+				NoIcon "RoofMetal08"
+				NoIcon "RoofConcrete01"
+				NoIcon "RoofConcrete02"
+				NoIcon "RoofConcrete03"
+				NoIcon "RoofConcrete04"
+
+/* [ 15] */    PopupControl		  100  170 100  20  60  20
+				NoIcon "Asphalt01"
+				NoIcon "Asphalt02"
+				NoIcon "Asphalt03"
+				NoIcon "Ground01"
+				NoIcon "Ground02"
+				NoIcon "Ground03"
+				NoIcon "Ground04"
+				NoIcon "Ground05"
+				NoIcon "Ground06"
+				NoIcon "Ground07"
+
+/* [ 16] */    PopupControl		  100  200 100  20  60  20
+				NoIcon "FloorTile01"
+				NoIcon "FloorTile02"
+				NoIcon "FloorTile03"
+				NoIcon "FloorTile04"
+				NoIcon "FloorTile05"
+				NoIcon "FloorTile06"
+
+/* [ 17] */ IconButton				  100  240   50  50	 32454
+ 				
+/* [ 18] */  IconButton		   	475  5   20   20	32456 noFrame
+/* [ 19] */  IconButton			10  240   40  40	32457  noFrame
+
+			}
+
+'DLGH'  32422  DLG_32422_Texturer {
+
+}
+ 
+ 'GDLG'  32423  Palette	   0    0   220  125 "BLDCreator" {
+
+/* [  1] */ Button				    110  95  80   20  LargePlain  "Close"
+/* [  2] */ RadioButton				10   10  60   20  LargePlain  1  "BLD"
+/* [  3] */ RadioButton				80   10  60   20  LargePlain  1  "Digi"
+/* [  4] */ PosIntEdit				150  10  20   20  LargePlain    "1"  "100"
+/* [  5] */ EditSpin				170  10  20   20  4
+/* [  6] */ Button				    10	 95  80   20  LargePlain  "Export"
+/* [  7] */ CheckBox				10  60   80   20	LargePlain  "Masad"
+
+}
+
+
+
+'DLGH'  32423  DLG_32423_BLDCreator {
+
+}
+
+ 'GDLG'  32424  Palette	   0    0   300  520 "Export3D" {
+
+/* [  1] */  IconButton									275  5   20   20	32456 noFrame
+/* [  2] PDF3D*/ IconPushCheck							10   50   80  80	 32436   frame BevelEdge  
+/* [  3] Yahalom ONLY BLD*/    IconPushCheck          	10   310  80  80      32433      BevelEdge
+/* [  4] Yahalom ONLY Shetah*/ IconPushCheck          	100  310  80  80	  32434    BevelEdge 
+/* [  5] VBS */ IconPushCheck        					10   140  80   80	 32435   frame BevelEdge
+/* [  6] */ Button				    110  490  80   20    LargePlain    "Export"
+/* [  7] */ Button				    10   490  80   20    LargePlain    "Open Max"
+/* [  8] */ PushCheck        		110  50  80   40	 LargePlain    "Masad"
+/* [  9] */ PosIntEdit				200  50  50   40     LargePlain    "1"  "100"
+/* [  10] */ EditSpin				200  50  50   40     9
+/* [  11] */ GroupBox				105  30  180  80	 LargeBold  Primary  "OBJ Import Setting"
+/* [  12] */ GroupBox				5    30   95  260	 LargeBold  Primary  "Export Types"
+/* [  13] */ GroupBox				5  290  180  160	 LargeBold  Primary  "Yahalom"
+/* [  14] */ RadioButton            30    395    80   20  LargePlain  2 "Build"
+/* [  15] */ RadioButton            120   395	50   20  LargePlain  2 ".Tmr"
+/* [  16] */ PushCheck        		10   230  80   40	 LargePlain	   "FBX"
+/* [  17] */ GroupBox				105  120  180  170	 LargeBold  Primary  "VBS Settings"
+/* [  18] */ LeftText				115  145  90  20	 LargePlain    Default  "Project Name"
+/* [  19] */ TextEdit			    160  160  110  40     LargePlain   100
+/* [  20] */ LeftText				115  195  90  20	 LargePlain    Default  "Model Name"
+/* [  21] */ TextEdit			    160  210  110  40     LargePlain   100
+/* [  22] */ PushCheck        		115  250  155  30	 LargePlain	   "UnderGround"
+/* [  23] */ LeftText				5  460   60   20	 LargePlain    Default  "Meni Path:"
+/* [  24] */ TextEdit			    75  450  195  30     LargePlain   100
+/* [  25] */ IconPushCheck        	195 310  75   120	 	 32437  frame BevelEdge
+/* [ 26] open Unity */ CheckBox     30  415  150   30	LargePlain  "Manual Build"
+}
+
+
+
+
+
+
+'DLGH'  32424  DLG_32424_Export3D {
+1	""							Button_0
+2	"Export PDF3D"							IconPushCheck_0
+3	"Export Yahalom - Only BLD"						IconPushRadio_0
+4	"Export Yahalom - Auto Shtila"					IconPushRadio_1
+5	"Export PBO for VBS"							IconPushCheck_1
+6	""							Button_1
+7	"Open Max - Import OBJ"							Button_2
+8	"Is the building with Masad?"					PushCheck_0
+9	"BLD Num"										PosIntEdit_0
+10	"BLD Num"										EditSpin_0
+11	""							GroupBox_0
+12	""							GroupBox_1
+13	""							GroupBox_2
+14	"Export Yahalom Build"							RadioButton_0
+15	"Export .TMR File"							RadioButton_1
+16	"Export FBX for Yahalom Dekel"							PushCheck_1
+17	""							GroupBox_3
+22  "Create Underground layer for VBS" PushCheck_2
+23  "" LeftText_0
+24  "Enter a YAAD path (No AC)" TextEdit_0
+25 "Use Server" IconPushCheck_2
+26 "Open Unity" CheckBox_1
+}
+
+
+'GDLG'  32425  Palette		        0    0  250  150  "Opening Numberer" {
+/* [ 1] */ IconButton			 225  5   20   20	32456 noFrame
+/* [2] */ TextEdit			    70  50  40   23	LargePlain  255
+/* [3] */ TextEdit			    70  80  40   23	LargePlain  255
+/* [4] */ LeftText				8  50   60   20	LargeBold  "Door :"
+/* [5] */ LeftText				8  80   60   20	LargeBold  "Window :"
+/* [6] */ Button				    70   110   80   20	LargePlain  "AutoNumber!"
+/* [7] */ Button				170 50  70	20	LargePlain "ManualD"
+/* [8] */ Button				170 80  70	20	LargePlain "ManualW"
+/* [9] */ TextEdit			    120  50  30   23	LargePlain  255
+/* [10] */ TextEdit			    120  80  30   23	LargePlain  255
+/* [11] */ LeftText				70  20   70   20	LargeBold  "Prefix :"
+/* [12] */ LeftText				120  20   70   20	LargeBold  "Value :"
+
+}
+
+
+'GDLG'  32426  Palette		        0    0  205  215  "Room Wizard" {
+/* [ 1] */ IconButton			 180  5   20   20	32456 noFrame
+/* [2] */ CheckBox			    10  30  60   23	LargePlain  "Texts"
+/* [3] */ CheckBox			    10  50  60   20	LargePlain  "Fills"
+/* [4] */ CheckBox				10  70   90   20	LargePlain  "AutoNaming"
+/* [5] */ RadioButton			110  30    80   20	LargePlain  1  "All Floors"
+/* [6] */ RadioButton			  110   70   80   20	LargePlain 1 "This Floor"
+/* [7] */ Button				10 100  70	50	LargePlain "Create Room"
+/* [8] */ Button				10 160  70	20	LargePlain "Delete Room"
+/* [9] */ IconButton			   110 100  50	50	32455
+/* [10] */ Button			    110 160  90	20	LargePlain  "Delete All Rooms"
+/* [11] */ LeftText				10  10   120   15	LargeUnderline  "Options:"
+
+}
+
+'GDLG'  32427  Palette		        0    0  130  130  "Merge Old Model" {
+/* [1] */  IconButton		   		100  5   20   20	32456 noFrame
+/* [2] */ Button				    10   60   70   50	LargePlain  "Fix old model!"
+/* [3] */ CheckBox				10  5  70   20	LargePlain  "Add old libraries"
+/* [4] */ CheckBox				10  30  80   30	LargePlain  "Retexture model"
+}
+
+'GDLG'  32428  Palette		        0    0  550  225  "2D -> 3D" {
+/* [  1] */  IconButton				525  5   20   20	32456 noFrame
+/* [  2] Layer*/ IconPushCheck		10   50   80  80	 32458   frame BevelEdge  
+/* [  3] Window*/ IconPushCheck		100   50   80  80	 32459   frame BevelEdge  
+/* [  4] Door*/ IconPushCheck		190   50   80  80	 32460   frame BevelEdge  
+/* [  5] Column*/ IconPushCheck		280   50   80  80	 32461   frame BevelEdge  
+/* [  6] WallMatch*/ IconPushCheck	370   50   80  80	 32462   frame BevelEdge  
+/* [  7] Floor*/ IconPushCheck		460   50   80  80	 32463   frame BevelEdge  
+/* [  8] */ Button				    225   180  80  40	LargePlain  "Go"
+/* [  9] */  ProgressBar			88   140  380 30  0  10   
+}
+
+
+
+'DLGH'  32428  DLG_32428 {
+1	"Close"							Button_0
+2	"Search For Layer Text"			IconPushCheck_0
+3	"Recognize Windows"				IconPushCheck_1
+4	"Recognize Door"				IconPushCheck_2
+5	"Recognize Column"				IconPushCheck_3
+6	"Match Single Walls"			IconPushCheck_4
+7	"Create Floors"					IconPushCheck_5
+8	"Run Code"						Button_0
+9	"Much Progress"					ProgressBar_0
+}

@@ -1,0 +1,225 @@
+﻿/* *****************************************************************************
+// Non-localizable resource description for the Smartik ARCHICAD Add-On
+// API Development Kit; Mac/Win
+//
+// Namespaces:		Contact person:
+//		-None-
+//
+// [SG compatible] - Yes
+// ****************************************************************************/
+
+#include "ResourceIDs.h"
+
+'MDID' 32500 "Add-On Identifier" {
+
+	2904906
+}
+
+
+'GICN' 32408 "Book" {
+          "Book"
+}
+
+'GICN' 32409 "Project" {
+          "Project"
+}
+
+'GICN' 32410 "Story Link" {
+          "StoryLink"
+}
+
+'GICN' 32411 "Section Link" {
+          "SectionLink"
+}
+
+'GICN' 32412 "Detail Link" {
+          "DetailLink"
+}
+
+'GICN' 32413 "Layout Link" {
+          "LayoutLink"
+}
+
+'GICN' 32414 "Master Layout Link" {
+          "MasterLink"
+}
+
+'GICN' 32415 "3D Axonometric Link" {
+          "Axon3DLink"
+}
+
+'GICN' 32416 "3D Perspective Link" {
+          "Persp3DLink"
+}
+
+'GICN' 32417 "Schedule Link" {
+          "ScheduleLink"
+}
+
+'GICN' 32418 "List" {
+          "List"
+}
+
+'GICN' 32419 "Help" {
+          "Help"
+}
+
+'GICN' 32420 "Other" {
+          "Other"
+}
+
+'GICN' 32421 "MasterFolder" {
+          "MasterFolder"
+}
+
+'GICN' 32422 "Worksheet Link" {
+          "WorksheetLink"
+}
+
+'GICN' 32423 "Subset" {
+          "Subset"
+}
+
+'GICN' 32424 "TOC" {
+          "TOC"
+}
+
+'GICN' 32425 "Camera" {
+          "Camera"
+}
+
+'GICN' 32426 "Camera Set" {
+          "CameraSet"
+}
+
+'GICN' 32427 "Info" {
+          "Info"
+}
+
+'GICN' 32428 "Elevation" {
+          "Elevation"
+}
+
+'GICN' 32429 "Interior Elevation" {
+          "IntElevation"
+}
+
+'GICN' 32430 "DocumentFrom3D" {
+          "DocumentFrom3D"
+}
+
+'GICN'  32431  "Texturer" {
+		"Texturer"
+}
+
+'GICN'  32432  "SelectInvert" {
+		"SelectInvert"
+}
+
+'GICN'  32433  "DiamondBuilding" {
+		"DiamondBuilding"
+}
+
+'GICN'  32434  "DiamondMountain" {
+		"DiamondMountain"
+}
+
+'GICN' 32435 "Vbs" {
+		"Vbs"	
+}
+
+'GICN' 32436 "Pdf" {
+		"Pdf"	
+}
+
+
+
+'GICN' 32437 "Server" {
+		"Server"
+}
+
+'GICN' 32438 "Export" {
+		"Export"
+}
+
+'GICN' 32439 "3DExport" {
+		"3DExport"
+}
+
+'GICN' 32440 "Basic" {
+		"Basic"
+}
+'GICN' 32441 "Tools" {
+		"Tools"
+}
+'GICN' 32442 "Rotate" {
+		"Rotate"
+}
+'GICN' 32443 "Contour" {
+		"Contour"
+}
+'GICN' 32444 "Calculate" {
+		"Calculate"
+}
+'GICN' 32445 "Number" {
+		"Number"
+}
+'GICN' 32446 "Delete" {
+		"Delete"
+}
+'GICN' 32447 "Document" {
+		"Document"
+}
+'GICN' 32448 "Dimensions" {
+		"Dimensions"
+}
+'GICN' 32449 "Room" {
+		"Room"
+}
+'GICN' 32450 "Naat" {
+		"Naat"
+}
+'GICN' 32451 "Server2" {
+		"Server2"
+}
+'GICN' 32452 "Print" {
+		"Print"
+}
+'GICN' 32453 "Navigator" {
+		"Navigator"
+}
+'GICN' 32454 "Bucket" {
+		"Bucket"
+}
+'GICN' 32455 "MagicWand" {
+		"MagicWand"
+}
+'GICN' 32456 "Close" {
+		"Close"
+}
+'GICN' 32457 "QuestionMark" {
+		"QuestionMark"
+}
+'GICN' 32458 "LayerSymb" {
+		"LayerSymb"
+}
+
+'GICN' 32459 "WindowSymb" {
+		"WindowSymb"
+}
+'GICN' 32460 "DoorSymb" {
+		"DoorSymb"
+}
+
+'GICN' 32461 "ColSymb" {
+		"ColSymb"
+}
+'GICN' 32462 "JointSymb" {
+		"JointSymb"
+}
+'GICN' 32463 "SlabSymb" {
+		"SlabSymb"
+}
+'GICN' 32464 "Camera2" {
+		"Camera2"
+}
